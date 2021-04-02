@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CratoMatch - Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6592f98cab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="top-header position-relative">
+        <div class="cratoMatch d-flex p-2 bg-white">
+          <div class="cratoMatch-banner mr-auto d-flex">
+            <img
+              class="img-fluid mr-2"
+              src="assets/images/dashboard.svg"
+              height="25"
+              width="25"
+            />
+            <div class="d-flex flex-column">
+              <h6 class="breadcrumb-home">Home</h6>
+              <h2 class="breadcrumb-name">CratoMatch - Dashboard</h2>
+            </div>
+          </div>
+          <div class="addview">
+            <div class="d-flex">
+              <button type="button" class="btn view-trans mr-2">
+                <i class="fa fa-address-book mr-2" aria-hidden="true"></i> VIEW
+                TRANSACTION
+              </button>
+              <button type="button" class="btn view-trans mr-2">
+                <i class="fa fa-university mr-2" aria-hidden="true"></i> ADD
+                BANK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-0 h-100 mt-2">
+        <div
+          class="d-flex content-banner flex-wrap p-2"
+          style="background-color: #eef1f4"
+        >
+          <div class="content-div-1 bg-white">
+            <div class="d-flex flex-column flex-wrap p-2">
+              <h5 class="bank-accounts mb-3">All Bank Accounts</h5>
+              <img
+                src="./assets/images/orange.webp"
+                alt=""
+                class="img-fluid mb-3"
+              />
+              <img
+                src="./assets/images/blue.webp"
+                alt=""
+                class="img-fluid mb-3"
+              />
+              <img
+                src="./assets/images/silver.webp"
+                alt=""
+                class="img-fluid mb-3"
+              />
+            </div>
+          </div>
+
+          <div class="content-div-2" style="background-color: #eef1f4">
+            <div class="d-flex flex-column p-2 bg-white">
+              <h5 class="bank-accounts mb-3">Quick Summary</h5>
+              <div
+                class="col-md-12 d-flex mb-2"
+                style="
+                  min-height: 120px;
+                  background-color: #e1f8ec;
+                  border-radius: 15px;
+                "
+              >
+                <div class="col-md-8 d-flex flex-column mt-4">
+                  <h6 style="font-size: 10px">Total available credit</h6>
+                  <h3>$15,287.91</h3>
+                </div>
+                <div class="col-md-4" style="position: relative; top: 46px">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/moneyp.webp"
+                    height="70"
+                    width="70"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-md-12 d-flex mb-2"
+                style="
+                  min-height: 120px;
+                  background-color: #e7effd;
+                  border-radius: 15px;
+                "
+              >
+                <div class="col-md-8 d-flex flex-column mt-4">
+                  <h6 style="font-size: 10px">Total no.of bank mapped</h6>
+                  <h3>03</h3>
+                </div>
+                <div class="col-md-4" style="position: relative; top: 56px">
+                  <img
+                    src="./assets/images/bluehouse.webp"
+                    height="60"
+                    width="70"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-md-12 d-flex"
+                style="
+                  min-height: 120px;
+                  background-color: #fceeec;
+                  border-radius: 15px;
+                "
+              >
+                <div class="col-md-8 d-flex flex-column mt-4">
+                  <h6 style="font-size: 10px">Total unmatch transaction</h6>
+                  <h3>121</h3>
+                  <a style="color: red; font-size: 12px"
+                    >Fix now
+                    <i class="fa fa-arrow-right ml-1" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <div class="col-md-4" style="position: relative; top: 56px">
+                  <img
+                    src="./assets/images/close red.webp"
+                    height="60"
+                    width="70"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 bg-white d-flex flex-column" style="height: 235px">
+              <h5 class="bank-accounts mt-2 ml-2 text-left">
+                Quick Total Available Credits
+              </h5>
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/circular-chart.webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="content-div-3 bg-white">
+            <div class="d-flex flex-column p-2 bg-white">
+              <h5 class="bank-accounts mb-3">Recent Activity</h5>
+              <div
+                class="p-1"
+                style="
+                  width: 100%;
+                  height: 22px;
+                  background-color: #e1f8ec;
+                  font-size: 12px;
+                "
+              >
+                <h6
+                  class="float-left ml-2"
+                  style="font-size: 10px; color: #157774; font-weight: 700"
+                >
+                  MARCH
+                </h6>
+                <i
+                  class="fa fa-caret-down float-right mr-4"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      18
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Steam Credit
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Bought Trails in the sky SC
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5 class="money" style="font-size: 14px; color: red">
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      12
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Apple Iphone SE
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Space Grey 64GB
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5 class="money" style="font-size: 14px; color: red">
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      04
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Paypal Transfer
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Sent for Design Service
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5 class="money" style="font-size: 14px; color: red">
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      18
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Steam Credit
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Bought Trails in the sky SC
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5
+                    class="money"
+                    style="font-size: 14px; color: rgb(33, 168, 33)"
+                  >
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      12
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Apple Iphone SE
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Space Grey 64GB
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5 class="money" style="font-size: 14px; color: red">
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      04
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Paypal Transfer
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Sent for Design Service
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5 class="money" style="font-size: 14px; color: red">
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      04
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Paypal Transfer
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Sent for Design Service
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5
+                    class="money"
+                    style="font-size: 14px; color: rgb(33, 168, 33)"
+                  >
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-column p-2 bg-white"
+              style="margin-top: -18px"
+            >
+              <div
+                class="p-1"
+                style="
+                  width: 100%;
+                  height: 22px;
+                  background-color: #e1f8ec;
+                  font-size: 12px;
+                "
+              >
+                <h6
+                  class="float-left ml-2"
+                  style="font-size: 10px; color: #157774; font-weight: 700"
+                >
+                  FEBRUARY
+                </h6>
+                <i
+                  class="fa fa-caret-down float-right mr-4"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      18
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Steam Credit
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Bought Trails in the sky SC
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5 class="money" style="font-size: 14px; color: red">
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      12
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Apple Iphone SE
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Space Grey 64GB
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5 class="money" style="font-size: 14px; color: red">
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      04
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Paypal Transfer
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Sent for Design Service
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5 class="money" style="font-size: 14px; color: red">
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="recent-activity d-flex justify-content-between mt-2 ml-2 pr-2 pl-2"
+              >
+                <div class="d-flex">
+                  <div class="month d-flex flex-column text-center">
+                    <h5 style="font-size: 14px; color: silver">MAR</h5>
+                    <h5
+                      style="
+                        font-size: 16px;
+                        margin-top: -8px;
+                        color: rgb(114, 114, 114);
+                      "
+                    >
+                      18
+                    </h5>
+                  </div>
+                  <div class="img-div d-flex ml-4">
+                    <img
+                      src="./assets/images/unauthorized-person.svg"
+                      height="20"
+                      width="20"
+                      style="border-radius: 50%; margin-top: 10px"
+                    />
+                    <div class="month d-flex flex-column text-left ml-3">
+                      <h5 style="font-size: 14px; color: rgb(114, 114, 114)">
+                        Steam Credit
+                      </h5>
+                      <h5
+                        style="font-size: 12px; margin-top: -6px; color: silver"
+                      >
+                        Bought Trails in the sky SC
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column text-left">
+                  <h5
+                    class="money"
+                    style="font-size: 14px; color: rgb(33, 168, 33)"
+                  >
+                    -$8.20
+                  </h5>
+                  <h5 style="font-size: 12px; margin-top: -6px; color: silver">
+                    12.23P.M
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-div-4 d-flex flex-column">
+            <div class="graph bg-white">
+              <div class="expense d-flex p-2">
+                <h5 class="bank-accounts mr-auto">Expense Report</h5>
+                <h6 style="font-size: 12px; color: silver" class="mr-3">Day</h6>
+                <h6 style="color: cyan; font-size: 12px" class="mr-3">Month</h6>
+                <h6 style="font-size: 12px; color: silver" class="mr-3">
+                  Year
+                </h6>
+              </div>
+              <div class="d-flex align-items-items justify-content-center">
+                <img
+                  class="img-fluid"
+                  src="assets/images/WhatsApp Image 2021-04-02 at 4.23.30 PM.webp"
+                />
+              </div>
+            </div>
+            <div class="graphs bg-white mt-2">
+              <div class="expense d-flex p-2">
+                <h5 class="bank-accounts mr-auto">Total Summary by Category</h5>
+              </div>
+              <div class="d-flex align-items-items justify-content-center">
+                <img
+                  class="img-fluid mt-3"
+                  src="./assets/images/WhatsApp Image 2021-04-02 at 4.23.30 PM (1).webp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
